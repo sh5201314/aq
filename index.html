@@ -53,3 +53,29 @@ tick();</script>
   <center>
   <iframe src="https://sh5201314.github.io/gps/" width="98%" height="900"></iframe></pre>
   </center>
+  <html> 
+<script language="JavaScript"> 
+top.window.moveTo(0,0); 
+//判断是否为IE浏览器 
+if (document.all) 
+{ 
+top.window.resizeTo(screen.availWidth,screen.availHeight); 
+} 
+//判断是否为Netscape浏览器(document.layers是Netscape 4.x专有的属性，由于 
+//document.layers在Netscape6.0以后已经取消，此方法只适用于6.0之前的浏览器) 
+
+else if (document.layers||document.getElementById) 
+{ 
+if(top.window.outerHeight<screen.availHeight|| 
+top.window.outerWidth<screen.availWidth) 
+{ 
+top.window.outerHeight = screen.availHeight; 
+top.window.outerWidth = screen.availWidth; 
+} 
+} 
+</script> 
+<head> 
+</head> 
+<body> 
+</body> 
+</html>
